@@ -1,213 +1,228 @@
-/* Add styles here */
-html{
-    scroll-behavior : smooth;
-}
+/* Add Your Styles Here */
 body{
     font-family: Arial, sans-serif;
     margin: 0;
 }
-/* ------------ sidebar -------------- */
-.sidebar{
-    background-color: #bd5d38;
-    float: left;
-    width: 300px;
-    text-align: center;
-    position: fixed;
-    top:0;
-    left: 0;
-    height: 100%;
-    box-shadow: 0 0 15px black;
-}
-.sidebar ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.sidebar ul li a{
-    color: #deac8c;
-    text-decoration: none;
-    padding: 16px 25px;
-    display: block;
-    font-size:16px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.sidebar ul li a:hover{
+
+/* ------------------- Main Header ----------------- */
+.main-header{
+    background-image: url("../images/technology.JPG");
+    padding: 15px;
+    background-size: cover;
     color: white;
-}
-.sidebar img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 10px solid #ca7d60;
-    box-shadow: 0 0 15px black;
-    margin-top: 100px;
-}
-/* ------------ About Section ---------------- */
-#about-section{
-    margin-left: 300px;
-    padding: 20px;
-}
-.about-article h1{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 80px;
-    text-shadow: 0 0 5px black;
-    margin: 150px 0 0 0;
-}
-.about-article .fname{
-    color: #343a40;
-}
-.about-article .lname{
-    color: #bd5d38;
-}
-.about-article h2{
-    font-family: 'Nunito', sans-serif;
-    font-size: 35px;
-    margin-top: 0;
-}
-.about-article p{
-    font-size: 20px;
-    color: #818283;
+    text-align: right;
 }
 
-/* ----------- Experience Section --------------- */
-#exp-section{
-    margin: 150px 0 200px 300px;
-    padding: 20px;
+/* ----------------- Main Nav bar  --------------------- */
+.main-nav{
+    background-color: black;
+    padding: 5px;
+    box-shadow: 0 0 15px black;
 }
-.main-heading{
-    font-family: 'Exo 2', sans-serif;
-    font-size: 50px;
-    text-shadow: 0 0 5px #bd5d38;
-}
-.exp-article{
-    width: 300px;
-    display: inline-block;
-    padding: 10px;
-}
-.exp-article h3{
-    font-family: 'Courgette', cursive;
-    font-size: 25px;
-}
-.exp-article p{
-    font-size: 20px;
-    color: #818283;
-    text-align: justify;
-}
-.exp-button{
-    background-color: #bd5d38;
+.main-nav a{
+    text-decoration: none;
     color: white;
-    border: none;
-    font-family: 'Anton', sans-serif;
     font-size: 18px;
     padding: 10px 25px;
-    border-radius: 50px;
-}
-
-/* ---------------- Education Section ---------------- */
-#education-section{
-    margin: 150px 0 200px 300px;
-    padding: 20px;
-}
-.edu-article{
-    background-color: #ca7d60;
-    color: white;
-    padding: 10px;
-    margin: 15px;
-    border: 5px solid white;
-    box-shadow: 0 0 5px #ca7d60;
-}
-.edu-article h3{
-    font-family: 'Lobster', cursive;
-    font-size: 20px;
-}
-.edu-article p{
-    font-size: 20px;
-}
-
-/* --------------------- Skills Section --------------- */
-#skills-section{
-    margin-left: 300px;
-    padding: 20px;
-}
-.skills-article{
-    background-color: #e6e7e2;
-    border: 5px solid #deac8c;
-    padding: 10px;
-    margin: 15px;
-}
-.skills-article h3{
-    font-family: 'Lobster', cursive;
-    font-size: 25px;
-    color: #bd5d38;
-}
-.skills-article .fab{
-    color: black;
-    padding: 0 20px 0 20px;
-}
-.skills-article .fab:hover{
-    color: #bd5d38;;
-
-}
-
-/* ----------------- Interests Section ----------- */
-#interests-section{
-    margin-left: 300px;
-    padding: 20px;
-}
-.interests-article{
-    background-color: #e6e7e2;
-    border: 5px solid #deac8c;
-    padding: 10px;
-    margin: 15px;
-}
-.interests-article h3{
-    font-family: 'Lobster', cursive;
-    font-size: 25px;
-    color: #bd5d38;
-}
-.interests-article .fas{
-    color: black;
-    padding: 0 20px 0 20px;
-}
-.interests-article .fas:hover{
-    color: #bd5d38;;
-
-}
-
-/* ------------- Certifications Section ---------- */
-#certification-section{
-    margin-left: 300px;
-    padding: 20px;
-}
-.cert-text{
-    font-size: 20px;
-    color: #818283;
-}
-.certification-article{
-    text-align: center;
-    border: 2px solid #bd5d38;
-    width: 220px;
     display: inline-block;
-    margin: 50px 5px 5px 5px;
+}
+.main-nav a:hover{
+    background-color: #7c856a;
+}
+.main-nav a.active{
+    background-color: #62c25c;
+}
+
+/* ---------------- Home News Section ----------------- */
+.home-news-section{
+    margin-left: 150px;
+}
+.home-news-article{
+    border: 2px solid black;
+    width: 330px;
+    height: 500px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+.home-news-article:hover{
+    width: 340px;
+    box-shadow: 0 0 15px black;
+}
+.home-news-article img{
+    width: 100%;
+}
+.home-news-div{
+    padding: 10px;
+}
+
+/* =------------------- Break --------------- */
+.break{
+    clear: both;
+}
+
+/* -------------------- Main News Section --------------- */
+.main-news-section{
+    width: 1100px;
+    margin: auto;
+}
+.main-news-article h2{
+    background: linear-gradient(to right , forestgreen, black , forestgreen);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px black;
+}
+.main-news-article p{
+    font-size: 18px;
+    text-align: center;
+}
+.zoom{
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    overflow: hidden;
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
     border-radius: 10px;
     transition: all 0.5s;
 }
-.certification-article:hover{
-    background-color: #bd5d38;
-    box-shadow: 0 0 15px #bd5d38;
-    transform: translateY(-10px);
-    cursor: pointer;
+.zoom:hover img{
+    transform: scale(1.2,1.2);
 }
-.certification-article:hover p{
+
+/* ---------------- Main Footer -------------------- */
+.main-footer{
+    background: linear-gradient(to right , #7c856a , black , #7c856a);
+    padding: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 15px black;
+}
+.main-footer a{
+    color: orange;
+}
+
+
+/* --------------- Gallery Section --------------- */
+.gallery-section{
+    text-align: center;
+}
+.gallery-article{
+    border: 2px solid black;
+    width: 300px;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.gallery-article:hover{
+    box-shadow: 0 0 15px black;
+    transition: all 1s;
+}
+.gallery-zoom{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.gallery-zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.gallery-zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+
+/* ------------- About Us Section -------------- */
+.about-section{
+    width: 1100px;
+    margin: auto;
+}
+.about-article{
+    background: white url("../images/image5.jpeg") no-repeat scroll bottom;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+}
+.company-images{
+    text-align: center;
+}
+.company-images img{
+    width: 250px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+
+/* ---------------- Contact Section ------------------ */
+.contact-section{
+    background: white url("../images/image5.jpeg") no-repeat fixed bottom;
+    padding: 20px;
+}
+.contact-article{
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+.contact-article h2{
     color: white;
 }
-.certification-article img{
-    width: 100px;
-    height: 100px;
-    margin-top: -50px;
+.input{
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    height: 35px;
+    background: transparent;
+    color: white;
+    border-bottom: 3px solid #7c856a;
+    width: 200px;
 }
-.certification-article p{
-    padding: 10px;
-    font-size: 16px;
+.input:focus{
+    border-bottom: 3px solid #62c25c;
 }
+::placeholder{
+    color: lightgray;
+}
+textarea{
+    background: transparent;
+    border: 3px solid #7c856a;
+    border-radius: 10px;
+    margin:10px;
+    width: 200px;
+    outline: none;
+}
+textarea:focus{
+    border: 3px solid #62c25c;
+}
+.contact-button{
+    background-color: #7c856a;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 55px;
+    border-radius: 50px;
+    margin: 10px 0 15px 0;
+}
+.contact-button:hover{
+    background-color: #62c25c;
+    box-shadow: 0 0 15px white;
+}
+
